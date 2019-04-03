@@ -41,11 +41,6 @@ ConversationContainer.propTypes = {
   match: PropTypes.object.isRequired,
 };
 
-const mapStateToProps = (state) => ({
-  conversations: state.conversation
-});
-const mapDispatchToProps = {
-  getReceieveConversation: receieveConversation
-}
+
 
 export default connect(mapStateToProps,mapDispatchToProps)(ConversationContainer)
